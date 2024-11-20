@@ -6,9 +6,15 @@
 
 (function($) {
 
+	
 	var	$window = $(window),
 		$head = $('head'),
 		$body = $('body');
+		$sidebar = $('#sidebar'),
+		$sidebar_inner = $sidebar.children('.inner');
+
+		
+	$sidebar.addClass('inactive');
 
 	// Breakpoints.
 		breakpoints({
@@ -70,8 +76,8 @@
 				});
 
 	// Sidebar.
-		var $sidebar = $('#sidebar'),
-			$sidebar_inner = $sidebar.children('.inner');
+		//var $sidebar = $('#sidebar'),
+			//$sidebar_inner = $sidebar.children('.inner');
 
 		// Inactive by default on <= large.
 			breakpoints.on('<=large', function() {
@@ -79,7 +85,7 @@
 			});
 
 			breakpoints.on('>large', function() {
-				$sidebar.removeClass('inactive');
+				$sidebar.addClass('inactive');
 			});
 
 		// Hack: Workaround for Chrome/Android scrollbar position bug.
