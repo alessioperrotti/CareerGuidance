@@ -27,6 +27,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+.list-spaced {
+  margin-bottom: 1em; 
+}
+
 body {
   line-height: 1; }
 
