@@ -31,6 +31,11 @@ footer, header, hgroup, menu, nav, section {
   margin-bottom: 1em; 
 }
 
+.h1center {
+  text-align: center;
+  color: #b9d3c9;
+}
+
 body {
   line-height: 1; }
 
